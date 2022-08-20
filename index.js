@@ -42,7 +42,7 @@ function getNewDog() {
     }
 
 function repeat() {
-        if(dogQty === 2){
+        if(dogQty === 3){
             dogQty = -1
         }
 }
