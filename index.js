@@ -34,7 +34,6 @@ function getNewDog() {
         currentDog = new Dog(dogs[dogQty])
         setTimeout(() => {
             endGame()
-            // repeat()
             render()
         isWaiting = false
         }, 1000);
@@ -60,12 +59,6 @@ function endGame() {
         </div>
     </div>`
     }
-}
-
-function repeat() {
-        if(dogQty === 3){
-            dogQty = -1
-        }
 }
 
 const yes = () => document.getElementById("yes").style.display = "block"
