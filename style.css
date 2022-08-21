@@ -8,6 +8,7 @@ html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* outline: 1px solid red; */
 }
 
 #container {
@@ -26,7 +27,7 @@ header {
 }
 
 .topicon {
-    height: 50px;
+    height: 40px;
 }
 
 #main {
@@ -90,4 +91,10 @@ header {
     top: 6%;
     left: 2%;
     transform: rotateZ(-35deg);
+}
+
+.end {
+    text-align: center;
+    font-size: 3rem;
+    
 }
