@@ -13,7 +13,6 @@ function check() {
     }
 }
 
-
 yesBtn.addEventListener("click", function() {
     getNewDog()
     yes()
@@ -34,12 +33,34 @@ function getNewDog() {
         isWaiting = true
         currentDog = new Dog(dogs[dogQty])
         setTimeout(() => {
-            repeat()
+            endGame()
+            // repeat()
             render()
         isWaiting = false
         }, 1000);
     }
+}
+
+function endGame() {
+    if(dogQty >= 4) {
+        document.body.innerHTML = `        
+        <div id="container">
+        <header>
+            <div class="container">
+                <img src="icon-profile.png" class="topicon">
+                <a href="index.html"><img src="logo.png" class="topicon"></a>
+                <img src="icon-chat.png" class="topicon">
+            </div>
+        </header>
+        <div class="end">
+        <h1>Sorry</h1>
+        <h3>There are no more dogs in your area!</h3>
+        <br />
+        <h3>Wait, and try again later</h3>
+        </div>
+    </div>`
     }
+}
 
 function repeat() {
         if(dogQty === 3){
@@ -49,13 +70,6 @@ function repeat() {
 
 const yes = () => document.getElementById("yes").style.display = "block"
 const nope = () => document.getElementById("nope").style.display = "block"
-
-
-
-
-
-
-
 
 function render() {
     document.getElementById("main").innerHTML = currentDog.getDogHtml()
