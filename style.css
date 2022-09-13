@@ -1,5 +1,5 @@
 html, body {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +23,7 @@ header {
 .container  {
     display: flex;
     justify-content: space-between;
-    padding: 0.8em;
+    padding: 0.75em;
 }
 
 .topicon {
@@ -73,7 +73,7 @@ header {
 }
 
 .button-nope:hover {
-    background-color: rgb(255, 202, 195);
+    background-color: rgb(255, 202, 196);
 }
 
 #yes {
