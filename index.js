@@ -52,10 +52,10 @@ function endGame() {
             </div>
         </header>
         <div class="end">
-        <h1>Sorry</h1>
-        <h3>There are no more dogs in your area!</h3>
+        <h3>Sorry</h1>
+        <h5>There are no more dogs in your area!</h3>
         <br />
-        <h3>Wait, and try again later</h3>
+        <h5>You can wait, and try again later</h3>
         </div>
     </div>`
     }
